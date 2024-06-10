@@ -105,14 +105,14 @@ void simulateCrisis() {
     if(bankChoice == 1 || bankChoice == 2 || bankChoice == 5) {
         printf("You lost all your money because you chose a bank that tried to cheat the system and was too greedy!\nIt doesn't matter what security you chose because your bank became bankrupt and you lost all your money.\nwomp womp better luck next time\n");
     } else {
-        printf("Congrclearatulations, your bank was reliable and was able to survive the recession!\nLet's see how your securities are!\n\n");
+        printf("Congratulations, your bank was reliable and was able to survive the recession!\nLet's see how your securities are!\n\n");
         if(secChoice == 1) {
             printf("You lost all your money!\nYour bank was reliable, but you invested in a risky security that many banks displayed as 'safe'!\nUr broke af now.\n");
         } else {
             // Calculate random loss percentage
             int lossPercentage = rand() % 21 + 30;
             printf("You lost %d%% of your investment in %s.\n", lossPercentage, securities[secChoice - 1]);
-            printf("\nIf you are seeing this screen, that means you survived the 2008 financial crisis!\nGood job, you are great at making predictions and making safe investments!\n");
+            printf("\nIf you are seeing this, that means you survived the 2008 financial crisis!\nGood job, you are great at making predictions and making safe investments!\n");
         }
     }
 }
